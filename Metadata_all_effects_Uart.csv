@@ -1,0 +1,11 @@
+variables,units,descriptions
+biome_types,unitless,grasslands vs. shrublands
+effects,unitless,Dominants abundance vs. biodiversity
+variables,unitless,response variables 
+slope,unitless,estimates of the models
+se,unitless,standard errors of estimates
+df,unitless,degree of freedom
+t value,unitless,t value
+p,unitless,p values
+r2m,unitless,the marginal R2
+r2c,unitless,the conditional R2

@@ -15,10 +15,10 @@ all.result <- c()
 for (i in 1:length (group)){
   data <- dd[dd$biome_types==group[i], ]
   all.result_1 <- c()
-  for (j in 7:18){
+  for (j in 6:17){
     each.depend <- data[ , j]
-    each.x <- data[ , 6] # dominants_abun
-    grazing <- data[ , 3]
+    each.x <- data[ , 5] # dominants_abun
+    grazing <- data[ , 2]
     each.fit <- lme(each.depend ~ each.x, random=list(~1|grazing), data = data)
     each.result <- c(unlist(summary(each.fit)$tTable[1, 1:2]),
                      unlist(summary(each.fit)$tTable[2, 1:5]), 
@@ -28,7 +28,7 @@ for (i in 1:length (group)){
   }
   all.result<-rbind(all.result,all.result_1)
 }
-colnames(all.result) <- c("biome_types", "variable", 
+colnames(all.result) <- c("biome_types", "variables", 
                           "intercept", "se_intercept",
                           "slope", "se_slope", "df", "t value", "p",
                           "r2m", "r2c")
@@ -43,10 +43,10 @@ all.result <- c()
 for (i in 1:length (group)){
   data <- dd[dd$biome_types==group[i], ]
   all.result_1 <- c()
-  for (j in 14:18){
+  for (j in 13:17){
     each.depend <- data[ , j]
-    each.x <- data[ , 11] # alphaD2
-    grazing <- data[ , 3]
+    each.x <- data[ , 10] # alphaD2
+    grazing <- data[ , 2]
     each.fit <- lme(each.depend ~ each.x, random=list(~1|grazing), data = data)
     each.result <- c(unlist(summary(each.fit)$tTable[1, 1:2]),
                      unlist(summary(each.fit)$tTable[2, 1:5]), 
@@ -56,7 +56,7 @@ for (i in 1:length (group)){
   }
   all.result<-rbind(all.result,all.result_1)
 }
-colnames(all.result) <- c("biome_types", "variable", 
+colnames(all.result) <- c("biome_types", "variables", 
                           "intercept", "se_intercept",
                           "slope", "se_slope", "df", "t value", "p",
                           "r2m", "r2c")
@@ -71,10 +71,10 @@ all.result <- c()
 for (i in 1:length (group)){
   data <- dd[dd$biome_types==group[i], ]
   all.result_1 <- c()
-  for (j in 14:18){
+  for (j in 13:17){
     each.depend <- data[ , j]
-    each.x <- data[ , 12] # betaD2
-    grazing <- data[ , 3]
+    each.x <- data[ , 11] # betaD2
+    grazing <- data[ , 2]
     each.fit <- lme(each.depend ~ each.x, random=list(~1|grazing), data = data)
     each.result <- c(unlist(summary(each.fit)$tTable[1, 1:2]),
                      unlist(summary(each.fit)$tTable[2, 1:5]), 
@@ -84,7 +84,7 @@ for (i in 1:length (group)){
   }
   all.result<-rbind(all.result,all.result_1)
 }
-colnames(all.result) <- c("biome_types", "variable", 
+colnames(all.result) <- c("biome_types", "variables", 
                           "intercept", "se_intercept",
                           "slope", "se_slope", "df", "t value", "p",
                           "r2m", "r2c")
@@ -99,10 +99,10 @@ all.result <- c()
 for (i in 1:length (group)){
   data <- dd[dd$biome_types==group[i], ]
   all.result_1 <- c()
-  for (j in 14:18){
+  for (j in 13:17){
     each.depend <- data[ , j]
-    each.x <- data[ , 13] # gammaD2
-    grazing <- data[ , 3]
+    each.x <- data[ , 12] # gammaD2
+    grazing <- data[ , 2]
     each.fit <- lme(each.depend ~ each.x, random=list(~1|grazing), data = data)
     each.result <- c(unlist(summary(each.fit)$tTable[1, 1:2]),
                      unlist(summary(each.fit)$tTable[2, 1:5]), 
@@ -112,7 +112,7 @@ for (i in 1:length (group)){
   }
   all.result<-rbind(all.result,all.result_1)
 }
-colnames(all.result) <- c("biome_types", "variable", 
+colnames(all.result) <- c("biome_types", "variables", 
                           "intercept", "se_intercept",
                           "slope", "se_slope", "df", "t value", "p",
                           "r2m", "r2c")
