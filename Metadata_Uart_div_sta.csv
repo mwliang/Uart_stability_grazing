@@ -3,16 +3,16 @@ biome_types,unitless,grasslands vs. shrublands
 grazing,unitless,"grazing intensity (NG = no grazing, MG = moderate grazing intensity, HG = high grazing intensity)"
 GI,unitless,"grazing intensity (1 = no grazing, 2 = moderate grazing intensity, 3 = high grazing intensity)"
 plots,unitless,id of grazing paddock
-dominants_abun,unitless,the log-transformed temporal mean of the relative abundance of the dominant species (Stipa glareosa) biomass
-dominants_sta,unitless,the log-transformed temporal stability of the dominant species (Stipa glareosa) 
-alphaD,unitless,the log-transformed temproal mean of species richness at quadrats 
-betaD,unitless,the log-transformed temproal mean of beta diversity across quadrats based on richness
-gammaD,unitless,the log-transformed temproal mean of species richness at paddocks
-alphaD2,unitless,the log-transformed temproal mean of species diversity (1/Simpson) at quadrats 
-betaD2,unitless,the log-transformed temproal mean of beta diversity across quadrats based on 1/Simpson index
-gammaD2,unitless,the log-transformed temproal mean of species diversity (1/Simpson) at paddocks
-spe_sta,unitless,the log-transformed species stability
-alpha_sta,unitless,the log-transformed alpha stability at quadrats
-gamma_sta,unitless,the log-transformed gamma stability at paddocks
-spe_asy,unitless,the log-transformed species asynchrony
-spa_asy,unitless,the log-transformed spatial asynchrony
+dominants_abun,unitless,the temporal mean of the relative abundance of the dominant species (Stipa glareosa) biomass
+dominants_sta,unitless,the temporal stability of the dominant species (Stipa glareosa) 
+alphaD,unitless,the temproal mean of species richness at quadrats 
+betaD,unitless,the temproal mean of beta diversity across quadrats based on richness
+gammaD,unitless,the temproal mean of species richness at paddocks
+alphaD2,unitless,the temproal mean of species diversity (1/Simpson) at quadrats 
+betaD2,unitless,the temproal mean of beta diversity across quadrats based on 1/Simpson index
+gammaD2,unitless,the temproal mean of species diversity (1/Simpson) at paddocks
+spe_sta,unitless,species stability
+alpha_sta,unitless,alpha stability at quadrats
+gamma_sta,unitless,gamma stability at paddocks
+spe_asy,unitless,species asynchrony
+spa_asy,unitless,spatial asynchrony
